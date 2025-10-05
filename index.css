@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #00bfff;
+}
+
+.main {
+    display: flex;                  /* activates flexbox */
+    justify-content: center;        /* center boxes horizontally */
+    align-items: center;            /* center vertically */
+    gap: 2rem;                      /* space between boxes */
+    background-color: #111;
+    padding: 1rem;
+}
+.item {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.item:hover {
+  color: #00bfff; /* light blue on hover */
+}
+.box {
+    background-color:  #222;
+}
+#title {
+    text-align: center;
+    text-shadow: #222;
+    font-size: larger;
+}
+
+/*Section 1 - Main Page*/
+#AboutMe1 {
+    display: flex; 
+    justify-content: center;
+    margin-top: 20px;
+
+}
+#text1 {
+    display: flex;
+    border: 5px outset black;
+    border-radius: 10px;       /* rounds the corners */
+    padding: 0.5rem 1rem;      /* space inside the box */
+    background-color: beige;
+}
+#image1 img{
+    width: 150px; /* Set equal width and height */
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circle and maintains aspect ratio */
+}
+
+/*Section 2 Main Page*/
+#text2 {
+    display: flex;
+    border: 5px outset black;
+    border-radius: 10px;       /* rounds the corners */
+    padding: 0.5rem 1rem;      /* space inside the box */
+    background-color: beige;
+}
+#AboutMe2 {
+    display: flex; 
+    justify-content: center;
+    margin-top: 20px;
+}
+#image2 img{
+    width: 150px; /* Set equal width and height */
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circle and maintains aspect ratio */
+}
+
+/*Section 3 Main Page*/
+#text3 {
+    display: flex;
+    border: 5px outset black;
+    border-radius: 10px;       /* rounds the corners */
+    padding: 0.5rem 1rem;      /* space inside the box */
+    background-color: beige;
+}
+#AboutMe3 {
+    display: flex; 
+    justify-content: center;
+    margin-top: 20px;
+}
+#image3 img{
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circle and maintains aspect ratio */
+}
