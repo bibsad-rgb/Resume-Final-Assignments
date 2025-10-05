@@ -1,8 +1,12 @@
 body {
+    display: flex;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #00bfff;
+    background-color: aliceblue;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .main {
@@ -29,7 +33,7 @@ body {
 #title {
     text-align: center;
     text-shadow: #222;
-    font-size: larger;
+    font-size: 50px;
 }
 /*--------------------------------------------*/
 
@@ -50,67 +54,73 @@ body {
     background-color: beige;
 }
 
-#skills1 {
+/*-----------------------------------------------*/
+#skills {
+    display:flex;
+    flex-direction: column;
+    border: 5px outset black;
+    width: 1000px;
+    height: 600px;
+    background-color: bisque;
+    align-items: center;
+}
+
+/*--------------------------------------------------*/
+#tech {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    gap: 20px;
-
 }
-
 #listTech {
-    display: flex;
     border: 5px outset black;
     border-radius: 10px;       /* rounds the corners */
     padding: 0.5rem 1rem;      /* space inside the box */
     background-color: beige;
-}
-
-#listSports {
-    display: flex;
-    border: 5px outset black;
-    border-radius: 10px;       /* rounds the corners */
-    padding: 0.5rem 1rem;      /* space inside the box */
-    background-color: beige;
-}
-
-#listAcademics {
-    display: flex;
-    border: 5px outset black;
-    border-radius: 10px;       /* rounds the corners */
-    padding: 0.5rem 1rem;      /* space inside the box */
-    background-color: beige;
-}
-
-/*---------------------------*/
-
-#images {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 60px;
+    margin-right: 20px;
 }
 #imageTech img{
-    width: 150px;           /* set equal width */
-    height: 150px;          /* set equal height */
-    border-radius: 50%;     /* makes it a perfect circle */
-    object-fit: cover;      /* fills the circle without stretching */
-    border: 2px solid #00bfff; /* optional border */
-    display: block;         /* removes inline spacing issues */
+    width: 150px; /* Set equal width and height */
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circle and maintains aspect ratio */
+}
+
+/*---------------------------------------------------------------------*/
+#sports {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#listSports {
+    border: 5px outset black;
+    border-radius: 10px;       /* rounds the corners */
+    padding: 0.5rem 1rem;      /* space inside the box */
+    background-color: beige;
+    margin-right: 20px;
 }
 #imageSports img{
-    width: 150px;           /* set equal width */
-    height: 150px;          /* set equal height */
-    border-radius: 50%;     /* makes it a perfect circle */
-    object-fit: cover;      /* fills the circle without stretching */
-    border: 2px solid #00bfff; /* optional border */
-    display: block;         /* removes inline spacing issues */
+    width: 150px; /* Set equal width and height */
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circle and maintains aspect ratio */
+}
+
+/*---------------------------------------------------------------*/
+#academics {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#listAcademics {
+     border: 5px outset black;
+    border-radius: 10px;       /* rounds the corners */
+    padding: 0.5rem 1rem;      /* space inside the box */
+    background-color: beige;
+    margin-right: 20px;
 }
 #imageAcademics img{
-    width: 150px;           /* set equal width */
-    height: 150px;          /* set equal height */
-    border-radius: 50%;     /* makes it a perfect circle */
-    object-fit: cover;      /* fills the circle without stretching */
-    border: 2px solid #00bfff; /* optional border */
-    display: block;         /* removes inline spacing issues */
+     width: 150px; /* Set equal width and height */
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circle and maintains aspect ratio */
 }

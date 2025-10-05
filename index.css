@@ -1,8 +1,12 @@
 body {
+    display: flex;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #00bfff;
+    background-color: aliceblue;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .main {
@@ -29,7 +33,17 @@ body {
 #title {
     text-align: center;
     text-shadow: #222;
-    font-size: larger;
+    font-size: 50px;
+}
+
+/*=======================================*/
+#AboutMe {
+    display:flex;
+    flex-direction: column;
+    border: 5px outset black;
+    width: 1000px;
+    height: 1100px;
+    background-color: bisque;
 }
 
 /*Section 1 - Main Page*/
@@ -40,11 +54,11 @@ body {
 
 }
 #text1 {
-    display: flex;
     border: 5px outset black;
     border-radius: 10px;       /* rounds the corners */
     padding: 0.5rem 1rem;      /* space inside the box */
     background-color: beige;
+    margin-right: 20px;
 }
 #image1 img{
     width: 150px; /* Set equal width and height */
@@ -55,11 +69,11 @@ body {
 
 /*Section 2 Main Page*/
 #text2 {
-    display: flex;
     border: 5px outset black;
     border-radius: 10px;       /* rounds the corners */
     padding: 0.5rem 1rem;      /* space inside the box */
     background-color: beige;
+    margin-left: 20px;
 }
 #AboutMe2 {
     display: flex; 
@@ -75,11 +89,12 @@ body {
 
 /*Section 3 Main Page*/
 #text3 {
-    display: flex;
     border: 5px outset black;
     border-radius: 10px;       /* rounds the corners */
     padding: 0.5rem 1rem;      /* space inside the box */
     background-color: beige;
+    margin-right: 20px;
+
 }
 #AboutMe3 {
     display: flex; 
@@ -90,3 +105,24 @@ body {
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover; /* Ensures the image fills the circle and maintains aspect ratio */
 }
+
+/*Section 4 Main Page*/
+#AboutMe4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#image4 img{
+    width: 150px; /* Set equal width and height */
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circle and maintains aspect ratio */
+}
+#text4 {
+    border: 5px outset black;
+    border-radius: 10px;       /* rounds the corners */
+    padding: 0.5rem 1rem;      /* space inside the box */
+    background-color: beige;
+    margin-left: 20px;
+}
+
